@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Raleway:wght@300&family=Yantramanav:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Prata&family=Raleway:wght@300&family=Yantramanav:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Montserrat&display=swap');
+*{
+    margin: 0;
+   padding: 0;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+nav ul  :hover{
+    color: rgb(232, 156, 169);
+    transition: 0.5s;
+}
+nav{
+    height: 3rem;
+    background-color: rgb(116, 38, 116);
+    color: white;
+    
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button{
+cursor: pointer;
+border-radius: 5px;
+width: 50px;
+padding: 2px 5px;
+border: 1px solid black;
+font-family: 'Yantramanav', sans-serif;
+color:rgb(255, 255, 255);
+background-color:rgb(248, 78, 248);
+margin-left:30px ;
+}
+button:hover{
+   
+    transition: 0.5s;
+    
+    background-color: rgb(254, 177, 10);
+color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Prata', serif
+}
+
+ .box{
+    border: 1px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(255, 230, 255);
+    transition: 0.5s;
+}
+span .boxtext{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.gameInfo{
+    padding: 0px 30px;
+   
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.gameInfo h1{
+    font-size: 5vw;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+
+@media screen and (max-width:600px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+        
+    }
+    .gameInfo{
+        margin-top: 1.5rem;
+    }
+   
+}
+@media screen and (max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+        text-align: center;
+
+    }
+    .box{
+        
+        align-items: center;
+    }
+}
+
+
+
+footer{
+    height: 50px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    font-size: .6rem;
+    font-family: 'Raleway', sans-serif;
+}
+.footer p{
+    color:white;
+    padding: 10px 0px 0px 0px;
+}
+.footer span{
+    color:red;
+}
+footer p{
+    color: white;
+    cursor: pointer;
+}
